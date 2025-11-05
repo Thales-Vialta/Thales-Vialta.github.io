@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Thales Vialta</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     html { scroll-behavior: smooth; }
     .fade-in {
@@ -18,104 +19,91 @@
     }
   </style>
 </head>
-
-<body class="bg-gradient-to-b from-purple-700 via-purple-800 to-gray-900 text-white font-sans">
-
-  <!-- ===== HEADER ===== -->
-  <header class="fixed top-0 left-0 w-full bg-purple-900/80 backdrop-blur-md shadow-lg z-50">
+<body class="text-gray-900 font-sans">
+  <header class="fixed top-0 left-0 w-full bg-[#7462F0]/90 backdrop-blur-md shadow-lg z-50 text-white">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-lg font-semibold tracking-wide">Thales Vialta</h1>
       <nav class="flex gap-4 text-sm">
-        <a href="#home" class="hover:text-purple-300 transition">Home</a>
-        <a href="#projetos" class="hover:text-purple-300 transition">Projetos</a>
-        <a href="#info" class="hover:text-purple-300 transition">Info</a>
-        <a href="#embraer" class="hover:text-purple-300 transition">Embraer</a>
+        <a href="#home" class="hover:text-[#D9C1F5] transition">Home</a>
+        <a href="#projetos" class="hover:text-[#D9C1F5] transition">Projetos</a>
+        <a href="#info" class="hover:text-[#D9C1F5] transition">Info</a>
+        <a href="#embraer" class="hover:text-[#D9C1F5] transition">Embraer</a>
       </nav>
+      <button id="lang-toggle" class="ml-4 text-sm bg-[#A162F0] hover:bg-[#D062F0] px-3 py-1 rounded-lg transition">
+        EN
+      </button>
     </div>
   </header>
-
-  <!-- ===== HOME ===== -->
-  <main id="home" class="pt-28 px-6 max-w-4xl mx-auto text-center fade-in">
-    <h2 class="text-4xl font-bold mb-6">Olá, eu sou o Thales 👋</h2>
-    <p class="text-lg leading-relaxed text-gray-200">
-      Sou <strong>Desenvolvedor Back-End</strong> nascido em 2007.<br />
-      Desde pequeno, busco entender e resolver problemas com criatividade.
-      Minha curiosidade por tecnologia começou aos 7 anos e me trouxe até aqui —
-      apaixonado por código e pelo desafio de sempre ir além.
-    </p>
-
-    <div class="mt-10">
-      <a href="#projetos"
-         class="inline-block bg-purple-700 hover:bg-purple-600 text-white px-8 py-3 rounded-xl text-lg font-medium transition">
-        Ver meus projetos
-      </a>
+  <main id="home" class="pt-32 px-6 max-w-6xl mx-auto fade-in bg-gradient-to-b from-[#D9C1F5] to-[#E9E8EC] text-gray-900 rounded-3xl shadow-md mt-10 mb-20">
+    <div class="flex flex-col md:flex-row items-center gap-16 py-16 px-8">
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-6 text-[#7462F0]" data-pt="Olá, eu sou o Thales 👋" data-en="Hi, I'm Thales 👋">Olá, eu sou o Thales 👋</h2>
+        <p class="text-lg leading-relaxed text-gray-700" 
+           data-pt="Sou Desenvolvedor Back-End nascido em 2007. Desde pequeno, busco entender e resolver problemas com criatividade. Minha curiosidade por tecnologia começou aos 7 anos e me trouxe até aqui — apaixonado por código e pelo desafio de sempre ir além."
+           data-en="I'm a Back-End Developer born in 2007. Since childhood, I've been driven to understand and solve problems creatively. My curiosity for technology began at 7 years old, and today I'm passionate about coding and pushing limits.">
+          Sou <strong>Desenvolvedor Back-End</strong> nascido em 2007. Desde pequeno, busco entender e resolver problemas com criatividade.
+          Minha curiosidade por tecnologia começou aos 7 anos e me trouxe até aqui — apaixonado por código e pelo desafio de sempre ir além.
+        </p>
+        <div class="mt-10">
+          <a href="#projetos"
+             class="inline-block bg-[#A162F0] hover:bg-[#D062F0] text-white px-8 py-3 rounded-xl text-lg font-medium transition"
+             data-pt="Ver meus projetos" data-en="See my projects">Ver meus projetos</a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="minha-foto.jpg" alt="Foto de Thales Vialta"
+             class="w-72 h-72 object-cover rounded-3xl shadow-lg border-4 border-[#A162F0]">
+      </div>
     </div>
   </main>
-
-  <!-- ===== PROJETOS ===== -->
-  <section id="projetos" class="py-24 px-6 max-w-6xl mx-auto text-center fade-in">
-    <h3 class="text-3xl font-bold mb-8">Projetos em Destaque 💻</h3>
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="bg-purple-900/40 p-6 rounded-xl shadow-md hover:shadow-purple-700/30 transition">
-        <h4 class="text-xl font-semibold mb-2">Sistema de Cadastro</h4>
-        <p class="text-sm text-gray-300">
-          Projeto em Java com conexão SQL, desenvolvido para gerenciar dispositivos e disponibilidade.
-        </p>
+  <section id="projetos" class="py-28 px-6 max-w-6xl mx-auto text-center fade-in bg-gradient-to-b from-[#7462F0] to-[#A162F0] text-white rounded-3xl shadow-lg mb-20">
+    <h3 class="text-3xl font-bold mb-12" data-pt="Projetos em Destaque 💻" data-en="Featured Projects 💻">Projetos em Destaque 💻</h3>
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition">
+        <h4 class="text-xl font-semibold mb-3">GoParty</h4>
+        <p class="text-sm text-gray-200">Sistema de agendamento e gerenciamento de festas com autenticação e controle de pagamentos.</p>
         <a href="https://github.com/Thales-Vialta" target="_blank"
-           class="inline-block mt-4 text-purple-300 hover:text-purple-200 text-sm font-medium">Ver no GitHub →</a>
+           class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
       </div>
-      <div class="bg-purple-900/40 p-6 rounded-xl shadow-md hover:shadow-purple-700/30 transition">
-        <h4 class="text-xl font-semibold mb-2">API de Marmitas Fit</h4>
-        <p class="text-sm text-gray-300">
-          Back-end em Python + Django para controle de assinaturas e entregas semanais de refeições saudáveis.
-        </p>
+      <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition">
+        <h4 class="text-xl font-semibold mb-3">HostiT</h4>
+        <p class="text-sm text-gray-200">Plataforma em Java para hospedagem de eventos e controle de disponibilidade de espaços.</p>
         <a href="https://github.com/Thales-Vialta" target="_blank"
-           class="inline-block mt-4 text-purple-300 hover:text-purple-200 text-sm font-medium">Ver no GitHub →</a>
+           class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
       </div>
-      <div class="bg-purple-900/40 p-6 rounded-xl shadow-md hover:shadow-purple-700/30 transition">
-        <h4 class="text-xl font-semibold mb-2">Portfólio Responsivo</h4>
-        <p class="text-sm text-gray-300">
-          Esta própria landing page feita em HTML + Tailwind, 100% responsiva e moderna.
-        </p>
+      <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition">
+        <h4 class="text-xl font-semibold mb-3">Caine</h4>
+        <p class="text-sm text-gray-200">Back-end em Python + Django para controle de assinaturas e entregas semanais de refeições saudáveis.</p>
         <a href="https://github.com/Thales-Vialta" target="_blank"
-           class="inline-block mt-4 text-purple-300 hover:text-purple-200 text-sm font-medium">Ver no GitHub →</a>
+           class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
       </div>
     </div>
   </section>
-
-  <!-- ===== INFO ===== -->
-  <section id="info" class="py-24 px-6 max-w-4xl mx-auto text-center fade-in">
-    <h3 class="text-3xl font-bold mb-6">Minhas Redes 🌐</h3>
-    <p class="text-gray-300 mb-8">Conecte-se comigo pelas minhas redes abaixo:</p>
-    <div class="flex justify-center gap-6 flex-wrap">
+  <section id="info" class="py-28 px-6 max-w-5xl mx-auto text-center fade-in bg-[#E9E8EC] rounded-3xl shadow-md mb-20">
+    <h3 class="text-3xl font-bold mb-6 text-[#7462F0]" data-pt="Minhas Redes" data-en="My Networks">Minhas Redes</h3>
+    <p class="text-gray-600 mb-10" data-pt="Conecte-se comigo pelas minhas redes abaixo:" data-en="Connect with me on my social media:">Conecte-se comigo pelas minhas redes abaixo:</p>
+    <div class="flex justify-center gap-8 flex-wrap">
       <a href="https://github.com/Thales-Vialta" target="_blank"
-         class="bg-purple-700/40 hover:bg-purple-700 px-6 py-3 rounded-xl transition">GitHub</a>
+         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="github"></i>GitHub</a>
       <a href="https://linkedin.com" target="_blank"
-         class="bg-purple-700/40 hover:bg-purple-700 px-6 py-3 rounded-xl transition">LinkedIn</a>
+         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="linkedin"></i>LinkedIn</a>
       <a href="https://instagram.com" target="_blank"
-         class="bg-purple-700/40 hover:bg-purple-700 px-6 py-3 rounded-xl transition">Instagram</a>
+         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="instagram"></i>Instagram</a>
       <a href="mailto:thalesvialta@gmail.com"
-         class="bg-purple-700/40 hover:bg-purple-700 px-6 py-3 rounded-xl transition">E-mail</a>
+         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="mail"></i>E-mail</a>
     </div>
   </section>
-
-  <!-- ===== EMBRAER ===== -->
-  <section id="embraer" class="py-24 px-6 max-w-4xl mx-auto text-center fade-in">
+  <section id="embraer" class="py-28 px-6 max-w-5xl mx-auto text-center fade-in bg-gradient-to-b from-[#F062D5] to-[#D9C1F5] rounded-3xl shadow-lg mb-20 text-white">
     <h3 class="text-3xl font-bold mb-4">Pilar de Cultura da Embraer ✈️</h3>
-    <p class="text-gray-300 leading-relaxed">
+    <p class="text-gray-100 leading-relaxed max-w-3xl mx-auto">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta malesuada erat,
       eget facilisis urna euismod ac. Proin fringilla, ex nec volutpat sodales, ligula eros viverra
-      mauris, nec interdum nisl velit in purus. Sed vel lectus id arcu iaculis mattis.
-      Nullam sed sapien sed libero faucibus tincidunt non et libero.
+      mauris, nec interdum nisl velit in purus.
     </p>
   </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="mt-10 py-6 text-center text-sm text-gray-400 border-t border-white/10">
+  <footer class="py-8 text-center text-sm text-gray-600 bg-[#E9E8EC] border-t border-[#D9C1F5]">
     Portfólio desenvolvido por <strong>Thales Vialta da Silva Cardoso</strong> — 2025
   </footer>
-
-  <!-- ===== SCRIPT DE ANIMAÇÃO ===== -->
   <script>
     const elements = document.querySelectorAll('.fade-in');
     const observer = new IntersectionObserver(entries => {
@@ -124,6 +112,18 @@
       });
     });
     elements.forEach(el => observer.observe(el));
+
+    const toggleBtn = document.getElementById('lang-toggle');
+    let lang = 'pt';
+    toggleBtn.addEventListener('click', () => {
+      lang = lang === 'pt' ? 'en' : 'pt';
+      document.querySelectorAll('[data-pt]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+      toggleBtn.textContent = lang === 'pt' ? 'EN' : 'PT';
+    });
+
+    lucide.createIcons();
   </script>
 </body>
 </html>
