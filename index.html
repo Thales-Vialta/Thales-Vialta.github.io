@@ -47,12 +47,14 @@
     <div class="flex flex-col md:flex-row items-center gap-16 py-16 px-8">
       <div class="flex-1 text-center md:text-left">
         <h2 class="text-4xl font-bold mb-6 text-[#7462F0]" data-pt="Olá, eu sou o Thales Vialta" data-en="Hi, I'm Thales Vialta">Olá, eu sou o Thales</h2>
-        <p class="text-lg leading-relaxed text-gray-700" 
-           data-pt="Sou Desenvolvedor Back-End nascido em 2007. Desde pequeno, busco entender e resolver problemas com criatividade. Minha curiosidade por tecnologia começou aos 7 anos e me trouxe até aqui — apaixonado por código e pelo desafio de sempre ir além."
-           data-en="I'm a Back-End Developer born in 2007. Since childhood, I've been driven to understand and solve problems creatively. My curiosity for technology began at 7 years old, and today I'm passionate about coding and pushing limits.">
-          Sou <strong>Desenvolvedor Back-End</strong> nascido em 2007. Desde pequeno, busco entender e resolver problemas com criatividade.
-          Minha curiosidade por tecnologia começou aos 7 anos e me trouxe até aqui — apaixonado por código e pelo desafio de sempre ir além.
-        </p>
+       <p class="text-lg leading-relaxed text-gray-700"
+   data-pt="Olá, meu nome é Thales Vialta, tenho 18 anos e moro na cidade de Caçapava (SP). Sou estudante de Análise e Desenvolvimento de Sistemas no IFSP – Campus Jacareí. Tenho grande interesse em tecnologia, especialmente em Back-End e automação. Busco sempre aprender, aprimorar meus códigos e entregar resultados sólidos e responsáveis."
+   data-en="Hello, my name is Thales Vialta, I'm 18 years old and live in Caçapava, Brazil. I study Systems Analysis and Development at IFSP – Jacareí Campus. I’m passionate about technology, especially Back-End development and automation. I’m always looking to learn, improve my code, and deliver solid, responsible results.">
+   Olá, meu nome é <strong>Thales Vialta</strong>, tenho 18 anos e moro na cidade de <strong>Caçapava (SP)</strong>.  
+   Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> no <strong>IFSP – Campus Jacareí</strong>.  
+   Tenho grande interesse em tecnologia, especialmente em <strong>Back-End</strong> e automação.  
+   Busco sempre aprender, aprimorar meus códigos e entregar resultados sólidos e responsáveis.
+</p>
         <div class="mt-10">
           <a href="#projetos"
              class="inline-block bg-[#A162F0] hover:bg-[#D062F0] text-white px-8 py-3 rounded-xl text-lg font-medium transition"
@@ -88,7 +90,7 @@
         <i data-lucide="calendar" class="w-10 h-10 text-[#D9C1F5]"></i>
       </div>
       <h4 class="text-xl font-semibold mb-3">HostiT</h4>
-      <p class="text-sm text-gray-200">Plataforma em Java para hospedagem de eventos e controle de disponibilidade de espaços.</p>
+      <p class="text-sm text-gray-200" data-pt="Plataforma em Java para hospedagem de eventos e controle de disponibilidade de espaços." data-en="GoParty is an application for automating key catering operations, offering a platform that facilitates party scheduling, temporary staff management, and logistical control of food orders.">Plataforma em Java para hospedagem de eventos e controle de disponibilidade de espaços.</p>
       <a href="https://github.com/Thales-Vialta" target="_blank"
          class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
     </div>
@@ -120,28 +122,32 @@
          class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="mail"></i>E-mail</a>
     </div>
   </section>
-  <section id="embraer" class="py-28 px-6 max-w-5xl mx-auto text-center fade-in bg-gradient-to-b from-[#F062D5] to-[#D9C1F5] rounded-3xl shadow-lg mb-20 text-white">
-    <h3 class="text-3xl font-bold mb-4">Pilar de Cultura da Embraer</h3>
-     <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-3xl shadow-lg">
-    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-      <img src="/images/embraer1.jpg" alt="Embraer Fábrica" class="w-full flex-shrink-0 object-cover">
-      <img src="/images/embraer2.jpg" alt="Equipe Embraer" class="w-full flex-shrink-0 object-cover">
-      <img src="/images/embraer3.jpg" alt="Aeronave Embraer" class="w-full flex-shrink-0 object-cover">
+  <section id="embraer" class="py-28 px-6 max-w-6xl mx-auto text-center fade-in bg-gradient-to-b from-[#F062D5] to-[#D9C1F5] rounded-3xl shadow-lg mb-20 text-white">
+  <h3 class="text-3xl font-bold mb-10">Pilar de Cultura da Embraer ✈️</h3>
+
+  <!-- Carrossel com Fade -->
+  <div class="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+    <div id="fadeCarousel" class="relative h-80">
+      <img src="/images/img1.png" alt="Fábrica Embraer" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
+      <img src="/images/img2.jpg" alt="Equipe Embraer" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+      <img src="/images/img3.jpg" alt="Aeronave Embraer" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
     </div>
-    <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
-      <i data-lucide="chevron-left"></i>
-    </button>
-    <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 hover:bg-white/30 p-3 rounded-full transition">
-      <i data-lucide="chevron-right"></i>
-    </button>
   </div>
-  <p class="mt-10 text-gray-100 leading-relaxed max-w-3xl mx-auto px-6">
-    A Embraer é símbolo de inovação e excelência na engenharia brasileira. 
-    O Pilar de Cultura reflete valores de <strong>colaboração, aprendizado contínuo</strong> e 
-    <strong>comprometimento com a qualidade</strong>. Essa filosofia inspira equipes a irem além, 
-    com foco em transformar ideias em realizações concretas.
-  </p>
-</section
+
+  <!-- Texto sobre o Pilar -->
+  <div class="mt-10 max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-md">
+    <h4 class="text-2xl font-semibold mb-4 text-[#D9C1F5]">Pilar: Seja responsável pelos resultados da empresa</h4>
+    <p class="text-gray-100 mb-4 leading-relaxed">
+      Escolhi este pilar porque acredito que responsabilidade e visão ampla são fundamentais em qualquer área — inclusive no desenvolvimento de software.
+      Assim como na Embraer, entendo que cada decisão técnica deve contribuir para o resultado geral do negócio, e não apenas para uma tarefa isolada.
+    </p>
+    <p class="text-gray-100 leading-relaxed">
+      Esse pilar impulsiona meu desenvolvimento profissional ao reforçar a importância de entender o impacto do meu trabalho, de cuidar dos recursos como se fossem meus
+      e de priorizar o sucesso coletivo sobre o individual. É um valor que levo comigo em cada projeto que desenvolvo.
+    </p>
+  </div>
+</section>
+
   </section>
   <footer class="py-8 text-center text-sm text-gray-600 bg-[#E9E8EC] border-t border-[#D9C1F5]">
     Portfólio desenvolvido por <strong>Thales Vialta da Silva Cardoso</strong> — 2025
@@ -166,6 +172,19 @@
     });
 
     lucide.createIcons();
+    const fadeCarousel = document.getElementById('fadeCarousel');
+    const fadeImages = fadeCarousel.querySelectorAll('img');
+    let fadeIndex = 0;
+
+  function showNextImage() {
+    fadeImages[fadeIndex].classList.remove('opacity-100');
+    fadeImages[fadeIndex].classList.add('opacity-0');
+    fadeIndex = (fadeIndex + 1) % fadeImages.length;
+    fadeImages[fadeIndex].classList.remove('opacity-0');
+    fadeImages[fadeIndex].classList.add('opacity-100');
+  }
+
+  setInterval(showNextImage, 5000);
   </script>
 </body>
 </html>
