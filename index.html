@@ -10,148 +10,161 @@
   <style>
     html { scroll-behavior: smooth; }
     .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .icon-container {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .icon-container:hover {
-    transform: scale(1.1) rotate(3deg);
-    box-shadow: 0 0 10px rgba(217, 193, 245, 0.6);
-  }
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .icon-container {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .icon-container:hover {
+      transform: scale(1.1) rotate(3deg);
+      box-shadow: 0 0 10px rgba(166, 130, 230, 0.6);
+    }
   </style>
 </head>
 
 <body class="text-gray-900 font-sans">
-  <header class="fixed top-0 left-0 w-full bg-[#7462F0]/90 backdrop-blur-md shadow-lg z-50 text-white">
+  <header class="fixed top-0 left-0 w-full bg-[#5C4BD9]/95 backdrop-blur-md shadow-lg z-50 text-white">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-lg font-semibold tracking-wide">Thales Vialta</h1>
       <nav class="flex gap-4 text-sm">
-        <a href="#home" class="hover:text-[#D9C1F5] transition">Home</a>
-        <a href="#projetos" class="hover:text-[#D9C1F5] transition">Projetos</a>
-        <a href="#info" class="hover:text-[#D9C1F5] transition">Info</a>
-        <a href="#embraer" class="hover:text-[#D9C1F5] transition">Embraer</a>
+        <a href="#home" class="hover:text-[#CBB4F0] transition" data-pt="Home" data-en="Home">Home</a>
+        <a href="#projetos" class="hover:text-[#CBB4F0] transition" data-pt="Projetos" data-en="Projects">Projetos</a>
+        <a href="#info" class="hover:text-[#CBB4F0] transition" data-pt="Info" data-en="Info">Info</a>
+        <a href="#embraer" class="hover:text-[#CBB4F0] transition" data-pt="Embraer" data-en="Embraer">Embraer</a>
       </nav>
-      <button id="lang-toggle" class="ml-4 text-sm bg-[#A162F0] hover:bg-[#D062F0] px-3 py-1 rounded-lg transition">
+      <button id="lang-toggle" class="ml-4 text-sm bg-[#7A4BD9] hover:bg-[#9E4BD9] px-3 py-1 rounded-lg transition">
         EN
       </button>
     </div>
   </header>
-  <main id="home" class="pt-32 px-6 max-w-6xl mx-auto fade-in bg-gradient-to-b from-[#D9C1F5] to-[#E9E8EC] text-gray-900 rounded-3xl shadow-md mt-10 mb-20">
+
+  <main id="home" class="pt-32 px-6 max-w-6xl mx-auto fade-in bg-gradient-to-b from-[#CBB4F0] to-[#D7D5E0] text-gray-900 rounded-3xl shadow-md mt-10 mb-20">
     <div class="flex flex-col md:flex-row items-center gap-16 py-16 px-8">
       <div class="flex-1 text-center md:text-left">
-        <h2 class="text-4xl font-bold mb-6 text-[#7462F0]" data-pt="Olá, eu sou o Thales Vialta" data-en="Hi, I'm Thales Vialta">Olá, eu sou o Thales</h2>
-       <p class="text-lg leading-relaxed text-gray-700"
-   data-pt="Olá, meu nome é Thales Vialta, tenho 18 anos e moro na cidade de Caçapava (SP). Sou estudante de Análise e Desenvolvimento de Sistemas no IFSP – Campus Jacareí. Tenho grande interesse em tecnologia, especialmente em Back-End e automação. Busco sempre aprender, aprimorar meus códigos e entregar resultados sólidos e responsáveis."
-   data-en="Hello, my name is Thales Vialta, I'm 18 years old and live in Caçapava, Brazil. I study Systems Analysis and Development at IFSP – Jacareí Campus. I’m passionate about technology, especially Back-End development and automation. I’m always looking to learn, improve my code, and deliver solid, responsible results.">
-   Olá, meu nome é <strong>Thales Vialta</strong>, tenho 18 anos e moro na cidade de <strong>Caçapava (SP)</strong>.  
-   Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> no <strong>IFSP – Campus Jacareí</strong>.  
-   Tenho grande interesse em tecnologia, especialmente em <strong>Back-End</strong> e automação.  
-   Busco sempre aprender, aprimorar meus códigos e entregar resultados sólidos e responsáveis.
-</p>
+        <h2 class="text-4xl font-bold mb-6 text-[#5C4BD9]" data-pt="Olá, eu sou o Thales Vialta" data-en="Hi, I'm Thales Vialta">Olá, eu sou o Thales Vialta</h2>
+        <p class="text-lg leading-relaxed text-gray-700"
+          data-pt="Olá, meu nome é Thales Vialta, tenho 18 anos e moro na cidade de Caçapava (SP). Sou estudante de Análise e Desenvolvimento de Sistemas no IFSP – Campus Jacareí. Tenho grande interesse em tecnologia, especialmente em Back-End e automação. Busco sempre aprender, aprimorar meus códigos e entregar resultados sólidos e responsáveis."
+          data-en="Hello, my name is Thales Vialta, I'm 18 years old and live in Caçapava (SP), Brazil. I study Systems Analysis and Development at IFSP – Jacareí Campus. I have a great interest in technology, especially Back-End and automation. I’m always seeking to learn, refine my code, and deliver solid and responsible results.">
+          Olá, meu nome é <strong>Thales Vialta</strong>, tenho 18 anos e moro na cidade de <strong>Caçapava (SP)</strong>.
+        </p>
         <div class="mt-10">
           <a href="#projetos"
-             class="inline-block bg-[#A162F0] hover:bg-[#D062F0] text-white px-8 py-3 rounded-xl text-lg font-medium transition"
+             class="inline-block bg-[#7A4BD9] hover:bg-[#9E4BD9] text-white px-8 py-3 rounded-xl text-lg font-medium transition"
              data-pt="Ver meus projetos" data-en="See my projects">Ver meus projetos</a>
         </div>
       </div>
       <div class="flex-1 flex justify-center">
         <img src="/images/foto.png" alt="Foto de Thales Vialta"
-             class="w-72 h-72 object-cover rounded-3xl shadow-lg border-4 border-[#A162F0]">
+             class="w-72 h-72 object-cover rounded-3xl shadow-lg border-4 border-[#7A4BD9]">
       </div>
     </div>
   </main>
-  <section id="projetos" class="py-28 px-6 max-w-6xl mx-auto text-center fade-in bg-gradient-to-b from-[#7462F0] to-[#A162F0] text-white rounded-3xl shadow-lg mb-20">
-  <h3 class="text-3xl font-bold mb-12" data-pt="Projetos em Destaque 💻" data-en="Featured Projects 💻">Projetos em Destaque 💻</h3>
+
+  <section id="projetos" class="py-28 px-6 max-w-6xl mx-auto text-center fade-in bg-gradient-to-b from-[#5C4BD9] to-[#7A4BD9] text-white rounded-3xl shadow-lg mb-20">
+    <h3 class="text-3xl font-bold mb-12" data-pt="Projetos em Destaque 💻" data-en="Featured Projects 💻">Projetos em Destaque 💻</h3>
   
-  <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-    
-    <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition flex flex-col items-center">
-      <div class="w-20 h-20 bg-white/20 flex items-center justify-center rounded-xl mb-5 icon-container">
-        <i data-lucide="party-popper" class="w-10 h-10 text-[#D9C1F5]"></i>
-        <!-- OU: <img src="/images/goparty-demo.png" alt="GoParty Preview" class="w-20 h-20 object-cover rounded-xl"> -->
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition flex flex-col items-center">
+        <div class="w-20 h-20 bg-white/20 flex items-center justify-center rounded-xl mb-5 icon-container">
+          <i data-lucide="party-popper" class="w-10 h-10 text-[#CBB4F0]"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">GoParty</h4>
+        <p class="text-sm text-gray-200"
+           data-pt="Sistema de agendamento e gerenciamento de festas com autenticação e controle de pagamentos."
+           data-en="Event scheduling and management system with authentication and payment control.">
+           Sistema de agendamento e gerenciamento de festas com autenticação e controle de pagamentos.
+        </p>
+        <a href="https://github.com/Thales-Vialta" target="_blank"
+           class="inline-block mt-5 text-[#CBB4F0] hover:text-white text-sm font-medium" data-pt="Ver no GitHub →" data-en="View on GitHub →">Ver no GitHub →</a>
       </div>
-      <h4 class="text-xl font-semibold mb-3">GoParty</h4>
-      <p class="text-sm text-gray-200" data-pt="O GoParty é uma aplicação para automatizar as principais operações do buffet, oferecendo uma plataforma que facilite o agendamento de festas, a gestão de funcionários temporários, o controle logístico dos pedidos de alimentos." data-en="GoParty is an application for automating key catering operations, offering a platform that facilitates party scheduling, temporary staff management, and logistical control of food orders.">Sistema de agendamento e gerenciamento de festas com autenticação e controle de pagamentos.</p>
-      <a href="https://github.com/Thales-Vialta" target="_blank"
-         class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
-    </div>
 
-    <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition flex flex-col items-center">
-      <div class="w-20 h-20 bg-white/20 flex items-center justify-center rounded-xl mb-5 icon-container">
-        <i data-lucide="calendar" class="w-10 h-10 text-[#D9C1F5]"></i>
+      <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition flex flex-col items-center">
+        <div class="w-20 h-20 bg-white/20 flex items-center justify-center rounded-xl mb-5 icon-container">
+          <i data-lucide="calendar" class="w-10 h-10 text-[#CBB4F0]"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">HostiT</h4>
+        <p class="text-sm text-gray-200"
+           data-pt="O HostiT é uma aplicação para startups e empresas que precisam acompanhar o uso de seus computadores em tempo real."
+           data-en="HostiT is an app for startups and companies that need to monitor their computers in real time.">
+           O HostiT é uma aplicação para startups e empresas que precisam acompanhar o uso de seus computadores em tempo real.
+        </p>
+        <a href="https://github.com/Thales-Vialta" target="_blank"
+           class="inline-block mt-5 text-[#CBB4F0] hover:text-white text-sm font-medium" data-pt="Ver no GitHub →" data-en="View on GitHub →">Ver no GitHub →</a>
       </div>
-      <h4 class="text-xl font-semibold mb-3">HostiT</h4>
-      <p class="text-sm text-gray-200" data-pt="O HostiT é uma aplicação para startups e empresas que precisam acompanhar o uso de seus computadores em tempo real.
-O sistema registra o horário de inicialização, o tempo de conexão à internet, o período de uso e o motivo de desligamento, criando um histórico completo de cada máquina." data-en="HostiT is an application for start-ups and companies that need to monitor the use of their computers in real time.
-The system records the start-up time, internet connection time, period of use and reason for shutdown, creating a complete history for each machine.">O HostiT é uma aplicação para startups e empresas que precisam acompanhar o uso de seus computadores em tempo real.
-O sistema registra o horário de inicialização, o tempo de conexão à internet, o período de uso e o motivo de desligamento, criando um histórico completo de cada máquina.</p>
-      <a href="https://github.com/Thales-Vialta" target="_blank"
-         class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
-    </div>
 
-    <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition flex flex-col items-center">
-      <div class="w-20 h-20 bg-white/20 flex items-center justify-center rounded-xl mb-5 icon-container">
-        <i data-lucide="package" class="w-10 h-10 text-[#D9C1F5]"></i>
+      <div class="bg-white/10 p-8 rounded-2xl shadow-md hover:shadow-lg hover:bg-white/20 transition flex flex-col items-center">
+        <div class="w-20 h-20 bg-white/20 flex items-center justify-center rounded-xl mb-5 icon-container">
+          <i data-lucide="package" class="w-10 h-10 text-[#CBB4F0]"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">Caine</h4>
+        <p class="text-sm text-gray-200"
+           data-pt="Aplicação em Back-end em Python + Django para controle de empréstimos de notebooks escolares."
+           data-en="Python + Django back-end Application for managing loans of scholar laptops">
+           Aplicação em Back-end em Python + Django para controle de empréstimos de notebooks escolares.
+        </p>gh
+        <a href="https://github.com/Thales-Vialta" target="_blank"
+           class="inline-block mt-5 text-[#CBB4F0] hover:text-white text-sm font-medium" data-pt="Ver no GitHub →" data-en="View on GitHub →">Ver no GitHub →</a>
       </div>
-      <h4 class="text-xl font-semibold mb-3">Caine</h4>
-      <p class="text-sm text-gray-200">Back-end em Python + Django para controle de assinaturas e entregas semanais de refeições saudáveis.</p>
-      <a href="https://github.com/Thales-Vialta" target="_blank"
-         class="inline-block mt-5 text-[#D9C1F5] hover:text-white text-sm font-medium">Ver no GitHub →</a>
     </div>
+  </section>
 
-  </div>
-</section>
-  <section id="info" class="py-28 px-6 max-w-5xl mx-auto text-center fade-in bg-[#E9E8EC] rounded-3xl shadow-md mb-20">
-    <h3 class="text-3xl font-bold mb-6 text-[#7462F0]" data-pt="Minhas Redes" data-en="My Networks">Minhas Redes</h3>
-    <p class="text-gray-600 mb-10" data-pt="Conecte-se comigo pelas minhas redes abaixo:" data-en="Connect with me on my social media:">Conecte-se comigo pelas minhas redes abaixo:</p>
+  <section id="info" class="py-28 px-6 max-w-5xl mx-auto text-center fade-in bg-[#D7D5E0] rounded-3xl shadow-md mb-20">
+    <h3 class="text-3xl font-bold mb-6 text-[#5C4BD9]" data-pt="Minhas Redes" data-en="My Networks">Minhas Redes</h3>
+    <p class="text-gray-600 mb-10" data-pt="Conecte-se comigo pelas minhas redes abaixo:" data-en="Connect with me on my social media below:">Conecte-se comigo pelas minhas redes abaixo:</p>
     <div class="flex justify-center gap-8 flex-wrap">
       <a href="https://github.com/Thales-Vialta" target="_blank"
-         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="github"></i>GitHub</a>
+         class="flex items-center gap-2 bg-[#7A4BD9] hover:bg-[#9E4BD9] px-6 py-3 rounded-xl text-white transition"><i data-lucide="github"></i>GitHub</a>
       <a href="https://linkedin.com/Thales-Vialta" target="_blank"
-         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="linkedin"></i>LinkedIn</a>
+         class="flex items-center gap-2 bg-[#7A4BD9] hover:bg-[#9E4BD9] px-6 py-3 rounded-xl text-white transition"><i data-lucide="linkedin"></i>LinkedIn</a>
       <a href="https://www.instagram.com/tha.tha_vialta" target="_blank"
-         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="instagram"></i>Instagram</a>
+         class="flex items-center gap-2 bg-[#7A4BD9] hover:bg-[#9E4BD9] px-6 py-3 rounded-xl text-white transition"><i data-lucide="instagram"></i>Instagram</a>
       <a href="mailto:thalesvialta12@gmail.com"
-         class="flex items-center gap-2 bg-[#A162F0] hover:bg-[#D062F0] px-6 py-3 rounded-xl text-white transition"><i data-lucide="mail"></i>E-mail</a>
+         class="flex items-center gap-2 bg-[#7A4BD9] hover:bg-[#9E4BD9] px-6 py-3 rounded-xl text-white transition"><i data-lucide="mail"></i>E-mail</a>
     </div>
   </section>
-  <section id="embraer" class="py-28 px-6 max-w-6xl mx-auto text-center fade-in bg-gradient-to-b from-[#F062D5] to-[#D9C1F5] rounded-3xl shadow-lg mb-20 text-white">
-  <h3 class="text-3xl font-bold mb-10">Pilar de Cultura da Embraer ✈️</h3>
 
-  <!-- Carrossel com Fade -->
-  <div class="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
-    <div id="fadeCarousel" class="relative h-80">
-      <img src="/images/img1.png" alt="Fábrica Embraer" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
-      <img src="/images/img2.png" alt="Equipe Embraer" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
-      <img src="/images/img3.png" alt="Aeronave Embraer" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+  <section id="embraer" class="py-28 px-6 max-w-6xl mx-auto text-center fade-in bg-gradient-to-b from-[#9E4BD9] to-[#CBB4F0] rounded-3xl shadow-lg mb-20 text-white">
+    <h3 class="text-3xl font-bold mb-10" data-pt="Pilar de Cultura da Embraer ✈️" data-en="Embraer Culture Pillar ✈️">Pilar de Cultura da Embraer ✈️</h3>
+
+    <div class="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+      <div id="fadeCarousel" class="relative h-80">
+        <img src="/images/img1.png" alt="Fábrica Embraer" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
+        <img src="/images/img2.png" alt="Equipe Embraer" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+        <img src="/images/img3.png" alt="Aeronave Embraer" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+      </div>
     </div>
-  </div>
 
-  <!-- Texto sobre o Pilar -->
-  <div class="mt-10 max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-md">
-    <h3 class="text-2xl font-semibold mb-4 text-[#A162F0]"><strong>Pilar: Seja responsável pelos resultados da empresa</strong></h3>
-    <p class="text-gray-100 mb-4 leading-relaxed">
-      Escolhi este pilar porque acredito que responsabilidade e visão ampla são fundamentais em qualquer área — inclusive no desenvolvimento de software.
-      Assim como na Embraer, entendo que cada decisão técnica deve contribuir para o resultado geral do negócio, e não apenas para uma tarefa isolada.
-    </p>
-    <p class="text-gray-100 leading-relaxed">
-      Esse pilar impulsiona meu desenvolvimento profissional ao reforçar a importância de entender o impacto do meu trabalho, de cuidar dos recursos como se fossem meus
-      e de priorizar o sucesso coletivo sobre o individual. É um valor que levo comigo em cada projeto que desenvolvo.
-    </p>
-  </div>
-</section>
-
+    <div class="mt-10 max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-md">
+      <h3 class="text-2xl font-semibold mb-4 text-[#CBB4F0]" 
+          data-pt="Pilar: Seja responsável pelos resultados da empresa"
+          data-en="Pillar: Take responsibility for the company's results">
+          Pilar: Seja responsável pelos resultados da empresa
+      </h3>
+      <p class="text-gray-100 mb-4 leading-relaxed"
+         data-pt="Escolhi este pilar porque acredito que responsabilidade e visão ampla são fundamentais em qualquer área, inclusive no desenvolvimento de software."
+         data-en="I chose this pillar because I believe responsibility and a broad vision are essential in any area, including software development.">
+         Escolhi este pilar porque acredito que responsabilidade e visão ampla são fundamentais em qualquer área, inclusive no desenvolvimento de software.
+      </p>
+      <p class="text-gray-100 leading-relaxed"
+         data-pt="Assim como na Embraer, entendo que cada decisão técnica deve contribuir para o resultado geral do negócio, e não apenas para uma tarefa isolada."
+         data-en="Just like at Embraer, I understand that each technical decision should contribute to the overall result of the business, not just an isolated task.">
+         Assim como na Embraer, entendo que cada decisão técnica deve contribuir para o resultado geral do negócio, e não apenas para uma tarefa isolada.
+      </p>
+    </div>
   </section>
-  <footer class="py-8 text-center text-sm text-gray-600 bg-[#E9E8EC] border-t border-[#D9C1F5]">
-    Portfólio desenvolvido por <strong>Thales Vialta da Silva Cardoso</strong> — 2025
+
+  <footer class="py-8 text-center text-sm text-gray-600 bg-[#D7D5E0] border-t border-[#CBB4F0]">
+    <span data-pt="Portfólio desenvolvido por Thales Vialta da Silva Cardoso — 2025" data-en="Portfolio developed by Thales Vialta da Silva Cardoso — 2025">
+      Portfólio desenvolvido por Thales Vialta da Silva Cardoso — 2025
+    </span>
   </footer>
+
   <script>
     const elements = document.querySelectorAll('.fade-in');
     const observer = new IntersectionObserver(entries => {
@@ -175,16 +188,14 @@ O sistema registra o horário de inicialização, o tempo de conexão à interne
     const fadeCarousel = document.getElementById('fadeCarousel');
     const fadeImages = fadeCarousel.querySelectorAll('img');
     let fadeIndex = 0;
-
-  function showNextImage() {
-    fadeImages[fadeIndex].classList.remove('opacity-100');
-    fadeImages[fadeIndex].classList.add('opacity-0');
-    fadeIndex = (fadeIndex + 1) % fadeImages.length;
-    fadeImages[fadeIndex].classList.remove('opacity-0');
-    fadeImages[fadeIndex].classList.add('opacity-100');
-  }
-
-  setInterval(showNextImage, 5000);
+    function showNextImage() {
+      fadeImages[fadeIndex].classList.remove('opacity-100');
+      fadeImages[fadeIndex].classList.add('opacity-0');
+      fadeIndex = (fadeIndex + 1) % fadeImages.length;
+      fadeImages[fadeIndex].classList.remove('opacity-0');
+      fadeImages[fadeIndex].classList.add('opacity-100');
+    }
+    setInterval(showNextImage, 5000);
   </script>
 </body>
 </html>
